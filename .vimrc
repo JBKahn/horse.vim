@@ -13,13 +13,13 @@ filetype off
 
 " Bundles {
     " Use local bundles if available {
-        if filereadable(expand("~/.nvimrc.bundles.local"))
+        if filereadable(expand("~/.vimrc.bundles.local"))
             source ~/.vimrc.bundles.local
         endif
     " }
 
     " Use bundles config {
-        if filereadable(expand("~/.nvimrc.bundles"))
+        if filereadable(expand("~/.vimrc.bundles"))
             source ~/.vimrc.bundles
         endif
     " }
