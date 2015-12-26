@@ -10,18 +10,16 @@
 
 filetype on
 filetype off
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
 
 " Bundles {
     " Use local bundles if available {
-        if filereadable(expand("~/.vimrc.bundles.local"))
+        if filereadable(expand("~/.nvimrc.bundles.local"))
             source ~/.vimrc.bundles.local
         endif
     " }
 
     " Use bundles config {
-        if filereadable(expand("~/.vimrc.bundles"))
+        if filereadable(expand("~/.nvimrc.bundles"))
             source ~/.vimrc.bundles
         endif
     " }

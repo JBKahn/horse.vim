@@ -5,46 +5,45 @@
         set background=dark     " Assume a dark background
     " }
 
-    " Setup Bundle Support {
-        " The next three lines ensure that the ~/.vim/bundle/ system works
+    " Setup Plug Support {
         filetype off
-        set rtp+=~/.vim/bundle/vundle
-        call vundle#rc()
+        call plug#begin('~/.local/share/nvim/site/plugged')
     " }
 
 " }
 
-" Bundles {
+" Plugs {
     " Deps
-        Bundle 'gmarik/vundle'
-        Bundle 'MarcWeber/vim-addon-mw-utils'
-        Bundle 'tomtom/tlib_vim'
+        Plug 'gmarik/vundle'
+        Plug 'MarcWeber/vim-addon-mw-utils'
+        Plug 'tomtom/tlib_vim'
 
     " General
-        Bundle 'scrooloose/nerdtree'
-        Bundle 'chriskempson/base16-vim'
-        Bundle 'tpope/vim-surround'
-        Bundle 'spf13/vim-autoclose'
-        Bundle 'kien/ctrlp.vim'
-        Bundle 'bling/vim-airline'
-        Bundle 'mbbill/undotree'
-        Bundle 'myusuf3/numbers.vim'
-        Bundle 'nathanaelkane/vim-indent-guides'
-        Bundle 'airblade/vim-gitgutter'
-        Bundle 'rking/ag.vim'
+        Plug 'scrooloose/nerdtree'
+        Plug 'chriskempson/base16-vim'
+        Plug 'tpope/vim-surround'
+        Plug 'spf13/vim-autoclose'
+        Plug 'kien/ctrlp.vim'
+        Plug 'bling/vim-airline'
+        Plug 'mbbill/undotree'
+        Plug 'myusuf3/numbers.vim'
+        Plug 'nathanaelkane/vim-indent-guides'
+        Plug 'airblade/vim-gitgutter'
+        Plug 'rking/ag.vim'
 
     " Programming
-        Bundle 'tpope/vim-fugitive'
-        Bundle 'scrooloose/nerdcommenter'
-        Bundle 'scrooloose/syntastic.git'
-        Bundle 'benekastah/neomake.git'
-        Bundle 'Shougo/neocomplcache'
-        Bundle 'Shougo/neosnippet'
-        Bundle 'Shougo/neosnippet-snippets'
-        Bundle 'honza/vim-snippets'
+        Plug 'tpope/vim-fugitive'
+        Plug 'scrooloose/nerdcommenter'
+        Plug 'scrooloose/syntastic'
+        Plug 'benekastah/neomake'
+        Plug 'Shougo/neocomplcache'
+        Plug 'Shougo/neosnippet'
+        Plug 'Shougo/neosnippet-snippets'
+        Plug 'honza/vim-snippets'
 " }
 
 " General {
     " set autowrite                  " automatically write a file when leaving a modified buffer
+    call plug#end()
     set shortmess+=filmnrxoOtT      " Abbrev. of messages (avoids 'hit enter')
 " }
